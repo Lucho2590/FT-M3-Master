@@ -32,7 +32,7 @@ server.post(PATH, (req, res) => {
         id: id++
     };
     posts.push(post);
-    res.status(200).json(post);
+    res.json(post);
 });
 
 server.post(`${PATH}/author/:author`, (req, res) => {
